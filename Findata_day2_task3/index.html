@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Input Content</title>
+</head>
+<body>
+
+  <input type="text" id="inputField" placeholder="Enter text">
+  <button id="displayButton">Display</button>
+  <p id="displayParagraph"></p>
+
+<script>
+  document.getElementById("displayButton").addEventListener("click", function() {
+    var inputContent = document.getElementById("inputField").value;
+    document.getElementById("displayParagraph").textContent = inputContent;
+    document.getElementById("inputField").value = "";
+    });
+</script>
+
+</body>
+</html>
